@@ -22,83 +22,69 @@ move.l 8(%sp), %d7 /* Number of entries is implied by %d7 will be the counter */
 
 /* Preservation of register contents on top of the stack and */
 /* pointer assignment for the memory location 0x2300000 */
-suba.l #60, %sp
-movem.l %a0-%a6/%d0-%d7, (%sp)
+sub.l #40, %sp
+movem.l %d2-%d7/%a2-%a5, (%sp)
+clr %d4	
 
-movea.l %a2, %a3 /* Copy the contents of %a2 to %a3 */
+move.l 48(%sp), %d7/*Counter MinMax*/
+move.l %a2, %a4	/*Copy array pointer*/
+move.l (%a4), %d2 /*Min*/
+move.l (%a4), %d3/*Max*/
 
-/* current min will be stored in a3*/
-min:
-  cmp.l %a2, %a3
-  bge greater
-  ble lesser
+MinMax:
+cmp.l 4(%a4), %d2
+blt Min
+move.l 4(%a4), %d2
+Min:
+cmp.l 4(%a4), %d3
+bgt Max
+move.l 4(%a4), %d3
+Max:
+subq.l #1, %d7
+addq.l #4, %a4
+cmp.l #1, %d7
+bgt MinMax
 
-greater: add.l #4, %a2
-         sub #1 %d7
-         cmp.l #0, %d7
-         bge min
-         ble store
-         
+move.l %d2, (%a3)+			
+move.l %d3, (%a3)+			
 
-lesser: move %a2, %a3
-        add.l #4, %a2
-        sub #1 %d7
-        cmp.l #0, %d7
-        bge min
+move.l 48(%sp), %d7			
+move.l %a2, %a4				
+clr %d2						
 
-
-store: add.l #4, %a3
-        sub.l 4*d7, %a2
-/* current max will be stored in a3*/
-max:
-  cmp.l %a2, %a3
-  bge greater
-  ble lesser
-
-greater: add.l #4, %a2
-         sub #1 %d7
-         cmp.l #0, %d7
-         bge min
-         ble store
-         
-
-lesser: move %a2, %a3
-        add.l #4, %a2
-        sub #1 %d7
-        cmp.l #0, %d7
-        bge min
+Mean:
+add.l (%a4)+, %d2
+subq.l #1, %d7
+tst %d7
+bne Mean
+divu.l 48(%sp), %d2
+move.w #0, (%a3)+
+move.w %d2, (%a3)+			
 
 
+move.l 48(%sp), %d7			
+move.l %a2, %a4				
+clr %d2						
 
+Divisor:
+tst %d7
+beq End
+subq.l #1, %d7
 
-Next_Round: move.l %a3, %a2
-		    sub.l #1, %d7 /* "Round" counter */
-            beq Lab_3c
-            move.l %d7, %d6 /* "Pass" counter */
+move.l (%a4)+, %d2
+divu.w 46(%sp), %d2
+swap %d2
+tst.w %d2
+bne Divisor
+move.l -4(%a4), (%a3)+
+addq.l #1, %d4
+bra Divisor
 
-            move.l (%a2)+, %d3
-            move.l (%a2), %d4
+End:
 
-/* Compare two successive numbers in the array */
-Compare: cmp.l %d3, %d4
-         bge Do_Not_Switch
-       /*bra Switch_With_Next_Position*/
-
-/* Sort the numbers in the array in ascending order */
-Switch_With_Next_Position: move.l %d4, -4(%a2)
-                           move.l %d3, (%a2)+
-                           move.l (%a2), %d4
-                           sub.l #1, %d6
-                           cmp.l #0, %d6
-                           beq Next_Round
-                           bra Compare
-Do_Not_Switch: move.l (%a2)+, %d3
-               move.l (%a2), %d4
-               sub.l #1, %d6
-               cmp.l #0, %d6
-               beq Next_Round
-               bra Compare
-
+move.l %d4, 52(%sp)
+movem.l (%sp), %d2-%d7/%a2-%a5
+add.l #40, %sp
 
 rts 
 
