@@ -18,13 +18,13 @@
 WelcomePrompt:
 /*Write your program here******************************************/
 
-
 sub.l #40, %sp
 movem.l %d2-%d7/%a2-%a5, (%sp)
 clr.l %d2 			/*%d2 = storage*/
 
 jsr cr
 jsr cr
+
 pea Welcome
 jsr iprintf
 addq.l #4,%sp
@@ -79,8 +79,7 @@ ContinueEnt:
 move.l %d2, 48(%sp)
 
 
-
-jsr cr				/********Divisor*******/
+jsr cr
 pea Divisor
 jsr iprintf
 addq.l #4, %sp
@@ -104,8 +103,7 @@ pea InvalidSmaS
 jsr iprintf			
 move.l %d2, (%sp)
 jsr value
-addq.l #4, %sp 		
-
+addq.l #4, %sp
 jsr cr
 jsr getstring
 move.l %d0, %d2
@@ -143,7 +141,7 @@ addq.l #4, %sp
 
 jsr getstring
 move.l %d0, %d2
-tst.l %d2
+cmp.l #0, %d2
 bge Continue
 jsr cr
 pea InvalidLT0
@@ -156,14 +154,16 @@ Continue:
 move.l %d2, (%a2)+
 subq.l #1, %d7
 cmp.l #1, %d7
-jgt ValueLoop
-
+bgt ValueLoop
+Next:
 jsr cr			
 pea FinalNum
 jsr iprintf
 addq.l #4, %sp
 
 jsr getstring
+cmp.l #0, %d0
+ble Next
 move.l %d0, (%a2)+
 
 movem.l (%sp), %d2-%d7/%a2-%a5

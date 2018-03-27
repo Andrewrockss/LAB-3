@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="nbeclipse.toolchain.nbde.rel.403536872">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="nbeclipse.toolchain.nbde.rel.403536872" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="s19" artifactName="${ProjName}_APP" buildProperties="org.eclipse.cdt.make.core.enableAutoBuild=true" cleanCommand="rm -f" description="" id="nbeclipse.toolchain.nbde.rel.403536872" name="Release" parent="nbeclipse.toolchain.nbde.rel">
+					<folderInfo id="nbeclipse.toolchain.nbde.rel.403536872." name="/" resourcePath="">
+						<toolChain id="nbeclipse.toolchain.nbde.rel.tc.988980291" name="NetBurner Device" superClass="nbeclipse.toolchain.nbde.rel.tc">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="nbeclipse.toolchain.nbde.rel.tc.targetPlatform.1244243822" name="NetBurner Module" superClass="nbeclipse.toolchain.nbde.rel.tc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/LAB3/Release}" enableAutoBuild="true" id="nbeclipse.toolchain.nbde.rel.tc.builder.2033406414" managedBuildOn="true" name="Release ELF builder (MINGW).Release" superClass="nbeclipse.toolchain.nbde.rel.tc.builder"/>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.html.329953128" name="NetBurner Comphtml" superClass="nbeclipse.toolchain.nbde.rel.tc.html"/>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.lua.622356346" name="NetBurner Complua" superClass="nbeclipse.toolchain.nbde.rel.tc.lua">
+								<option id="nbeclipse.toolchain.super.lua.nb.location.1074721346" superClass="nbeclipse.toolchain.super.lua.nb.location" value="C:\nburn/pcbin/complua/complua.lua" valueType="string"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.prom.1594676324" name="FPGA Promgen" superClass="nbeclipse.toolchain.nbde.rel.tc.prom"/>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.cfile.1455052580" name="NetBurner Compfile" superClass="nbeclipse.toolchain.nbde.rel.tc.cfile"/>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.gcc.1401932007" name="GNU C Compiler" superClass="nbeclipse.toolchain.nbde.rel.tc.gcc">
+								<option id="nbeclipse.toolchain.super.gcc.cpu.1110886210" superClass="nbeclipse.toolchain.super.gcc.cpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.platform.525469028" superClass="nbeclipse.toolchain.super.gcc.platform" value="MOD5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.cpu_type.805281224" superClass="nbeclipse.toolchain.super.gcc.cpu_type" value="MCF5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.directories.includepaths.349746064" superClass="nbeclipse.toolchain.super.gcc.directories.includepaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/mod5270/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/gcc-m68k/m68k-elf/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LAB3}&quot;"/>
+								</option>
+								<inputType id="nbeclipse.toolchain.nbde.rel.tc.gcc.input.27485218" name="GNU C Input" superClass="nbeclipse.toolchain.nbde.rel.tc.gcc.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.gpp.471486123" name="GNU C++ Compiler" superClass="nbeclipse.toolchain.nbde.rel.tc.gpp">
+								<option id="nbeclipse.toolchain.super.gpp.cpu.1397570415" superClass="nbeclipse.toolchain.super.gpp.cpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.platform.1210451939" superClass="nbeclipse.toolchain.super.gpp.platform" value="MOD5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.cpu_type.1943558113" superClass="nbeclipse.toolchain.super.gpp.cpu_type" value="MCF5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.directories.includepaths.1054005100" superClass="nbeclipse.toolchain.super.gpp.directories.includepaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/mod5270/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/gcc-m68k/m68k-elf/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LAB3}&quot;"/>
+								</option>
+								<inputType id="nbeclipse.toolchain.nbde.rel.tc.gpp.input.99173991" name="GNU C++ Input" superClass="nbeclipse.toolchain.nbde.rel.tc.gpp.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.as.769554505" name="GNU Assembler" superClass="nbeclipse.toolchain.nbde.rel.tc.as">
+								<option id="nbeclipse.toolchain.super.as.cpu.275295994" superClass="nbeclipse.toolchain.super.as.cpu" value="-mcpu=5206e" valueType="string"/>
+								<inputType id="nbeclipse.toolchain.nbde.rel.tc.as.input.1512041334" name="GNU Assembler Input" superClass="nbeclipse.toolchain.nbde.rel.tc.as.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.link.1816193592" name="GNU C/C++ Linker" superClass="nbeclipse.toolchain.nbde.rel.tc.link">
+								<option id="nbeclipse.toolchain.super.link.mcpu.1965733113" superClass="nbeclipse.toolchain.super.link.mcpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.link.ldflags.1021403939" superClass="nbeclipse.toolchain.super.link.ldflags" value="-Wl -Wl,-n -T&quot;${NBROOT}/MOD5270/lib/MOD5270.ld&quot; -Wl,-R&quot;${NBROOT}/MOD5270/lib/sys.ld&quot;" valueType="string"/>
+								<option id="nbeclipse.toolchain.nbde.rel.tc.link.libs.libs.589917541" superClass="nbeclipse.toolchain.nbde.rel.tc.link.libs.libs" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/MOD5270.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/NetBurner.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/FatFile.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\debugLibrary.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\Lua_Full.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\nb-libxively.a&quot;"/>
+								</option>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.objcopy.2080635515" name="GNU ELF Objcopy" superClass="nbeclipse.toolchain.nbde.rel.tc.objcopy"/>
+							<tool command="compcode" id="nbeclipse.toolchain.nbde.rel.tc.compcode.1695538226" name="NetBurner Compcode" superClass="nbeclipse.toolchain.nbde.rel.tc.compcode">
+								<option id="nbeclipse.toolchain.super.compcode.memrange.344187680" superClass="nbeclipse.toolchain.super.compcode.memrange" value="0xffc08000 0xFFC80000" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.compcode.platform.1651531328" superClass="nbeclipse.toolchain.super.compcode.platform" value="MOD5270" valueType="string"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="nbeclipse.toolchain.nbde.debug.1437698442">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="nbeclipse.toolchain.nbde.debug.1437698442" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="s19" artifactName="${ProjName}_APP" buildProperties="" cleanCommand="rm -f" description="" id="nbeclipse.toolchain.nbde.debug.1437698442" name="Debug" parent="nbeclipse.toolchain.nbde.debug">
+					<folderInfo id="nbeclipse.toolchain.nbde.debug.1437698442." name="/" resourcePath="">
+						<toolChain id="nbeclipse.toolchain.nbde.debug.tc.150188269" name="NetBurner Device" superClass="nbeclipse.toolchain.nbde.debug.tc">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="nbeclipse.toolchain.nbde.debug.tc.targetPlatform.1390779865" name="NetBurner Module" superClass="nbeclipse.toolchain.nbde.debug.tc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/LAB3/Debug}" enableAutoBuild="true" id="nbeclipse.toolchain.nbde.debug.tc.builder.591552966" managedBuildOn="true" name="Debug ELF builder (MINGW).Debug" superClass="nbeclipse.toolchain.nbde.debug.tc.builder"/>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.html.242883513" name="NetBurner Comphtml" superClass="nbeclipse.toolchain.nbde.debug.tc.html"/>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.lua.1951487571" name="NetBurner Complua" superClass="nbeclipse.toolchain.nbde.debug.tc.lua">
+								<option id="nbeclipse.toolchain.super.lua.nb.location.689797622" superClass="nbeclipse.toolchain.super.lua.nb.location" value="C:\nburn/pcbin/complua/complua.lua" valueType="string"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.gcc.1103406067" name="GNU C Compiler" superClass="nbeclipse.toolchain.nbde.debug.tc.gcc">
+								<option id="nbeclipse.toolchain.super.gcc.cpu.413652536" superClass="nbeclipse.toolchain.super.gcc.cpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.platform.1982568210" superClass="nbeclipse.toolchain.super.gcc.platform" value="MOD5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.cpu_type.644441714" superClass="nbeclipse.toolchain.super.gcc.cpu_type" value="MCF5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.directories.includepaths.663889638" superClass="nbeclipse.toolchain.super.gcc.directories.includepaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/mod5270/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/gcc-m68k/m68k-elf/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LAB3}&quot;"/>
+								</option>
+								<option id="nbeclipse.toolchain.nbde.debug.tc.gcc.preprocessor.defined.15704584" superClass="nbeclipse.toolchain.nbde.debug.tc.gcc.preprocessor.defined" valueType="stringList">
+									<listOptionValue builtIn="false" value="_DEBUG"/>
+								</option>
+								<inputType id="nbeclipse.toolchain.nbde.debug.tc.gcc.input.1469567681" name="GNU C Input" superClass="nbeclipse.toolchain.nbde.debug.tc.gcc.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.gpp.1007357821" name="GNU C++ Compiler" superClass="nbeclipse.toolchain.nbde.debug.tc.gpp">
+								<option id="nbeclipse.toolchain.super.gpp.cpu.810525966" superClass="nbeclipse.toolchain.super.gpp.cpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.platform.336185929" superClass="nbeclipse.toolchain.super.gpp.platform" value="MOD5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.cpu_type.899429667" superClass="nbeclipse.toolchain.super.gpp.cpu_type" value="MCF5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.directories.includepaths.627714602" superClass="nbeclipse.toolchain.super.gpp.directories.includepaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/mod5270/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/gcc-m68k/m68k-elf/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LAB3}&quot;"/>
+								</option>
+								<option id="nbeclipse.toolchain.nbde.debug.tc.gpp.preprocessor.defined.921480037" superClass="nbeclipse.toolchain.nbde.debug.tc.gpp.preprocessor.defined" valueType="stringList">
+									<listOptionValue builtIn="false" value="_DEBUG"/>
+								</option>
+								<inputType id="nbeclipse.toolchain.nbde.debug.tc.gpp.input.2004392796" name="GNU C++ Input" superClass="nbeclipse.toolchain.nbde.debug.tc.gpp.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.as.1876578118" name="GNU Assembler" superClass="nbeclipse.toolchain.nbde.debug.tc.as">
+								<option id="nbeclipse.toolchain.super.as.cpu.882724865" superClass="nbeclipse.toolchain.super.as.cpu" value="-mcpu=5206e" valueType="string"/>
+								<inputType id="nbeclipse.toolchain.nbde.debug.tc.as.input.1314882233" name="GNU Assembler Input" superClass="nbeclipse.toolchain.nbde.debug.tc.as.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.link.1174626349" name="GNU C/C++ Linker" superClass="nbeclipse.toolchain.nbde.debug.tc.link">
+								<option id="nbeclipse.toolchain.super.link.mcpu.1741406665" superClass="nbeclipse.toolchain.super.link.mcpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.link.ldflags.716106870" superClass="nbeclipse.toolchain.super.link.ldflags" value="-Wl -Wl,-n -T&quot;${NBROOT}/MOD5270/lib/MOD5270.ld&quot; -Wl,-R&quot;${NBROOT}/MOD5270/lib/sys.ld&quot;" valueType="string"/>
+								<option id="nbeclipse.toolchain.nbde.debug.tc.link.libs.libs.1545196978" superClass="nbeclipse.toolchain.nbde.debug.tc.link.libs.libs" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/DBMOD5270.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/DBNetBurner.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/FatFile.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\DBdebugLibrary.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\DBLua_Full.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\DBnb-libxively.a&quot;"/>
+								</option>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.objcopy.270827753" name="GNU ELF Objcopy" superClass="nbeclipse.toolchain.nbde.debug.tc.objcopy"/>
+							<tool command="compcode" id="nbeclipse.toolchain.nbde.debug.tc.compcode.1318080156" name="NetBurner Compcode" superClass="nbeclipse.toolchain.nbde.debug.tc.compcode">
+								<option id="nbeclipse.toolchain.super.compcode.memrange.2020405012" superClass="nbeclipse.toolchain.super.compcode.memrange" value="0xffc08000 0xFFC80000" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.compcode.platform.1249707373" superClass="nbeclipse.toolchain.super.compcode.platform" value="MOD5270" valueType="string"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="nbeclipse.toolchain.nbde.rel.1484050076">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="nbeclipse.toolchain.nbde.rel.1484050076" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="s19" artifactName="${ProjName}_APP" buildProperties="org.eclipse.cdt.make.core.enableAutoBuild=true" cleanCommand="rm -f" description="" id="nbeclipse.toolchain.nbde.rel.1484050076" name="Release" parent="nbeclipse.toolchain.nbde.rel">
+					<folderInfo id="nbeclipse.toolchain.nbde.rel.1484050076." name="/" resourcePath="">
+						<toolChain id="nbeclipse.toolchain.nbde.rel.tc.286072817" name="NetBurner Device" superClass="nbeclipse.toolchain.nbde.rel.tc">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="nbeclipse.toolchain.nbde.rel.tc.targetPlatform.493368334" name="NetBurner Module" superClass="nbeclipse.toolchain.nbde.rel.tc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/LAB3/Release}" enableAutoBuild="true" id="nbeclipse.toolchain.nbde.rel.tc.builder.379878884" managedBuildOn="true" name="Release ELF builder (MINGW).Release" superClass="nbeclipse.toolchain.nbde.rel.tc.builder"/>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.html.1086074015" name="NetBurner Comphtml" superClass="nbeclipse.toolchain.nbde.rel.tc.html"/>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.lua.689032872" name="NetBurner Complua" superClass="nbeclipse.toolchain.nbde.rel.tc.lua">
+								<option id="nbeclipse.toolchain.super.lua.nb.location.1661776004" superClass="nbeclipse.toolchain.super.lua.nb.location" value="C:\nburn/pcbin/complua/complua.lua" valueType="string"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.prom.1347597450" name="FPGA Promgen" superClass="nbeclipse.toolchain.nbde.rel.tc.prom"/>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.cfile.503183344" name="NetBurner Compfile" superClass="nbeclipse.toolchain.nbde.rel.tc.cfile"/>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.gcc.376268706" name="GNU C Compiler" superClass="nbeclipse.toolchain.nbde.rel.tc.gcc">
+								<option id="nbeclipse.toolchain.super.gcc.cpu.604264883" superClass="nbeclipse.toolchain.super.gcc.cpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.platform.1557784874" superClass="nbeclipse.toolchain.super.gcc.platform" value="MOD5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.cpu_type.1384062204" superClass="nbeclipse.toolchain.super.gcc.cpu_type" value="MCF5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.directories.includepaths.89258596" superClass="nbeclipse.toolchain.super.gcc.directories.includepaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/mod5270/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/gcc-m68k/m68k-elf/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LAB3}&quot;"/>
+								</option>
+								<inputType id="nbeclipse.toolchain.nbde.rel.tc.gcc.input.2074436707" name="GNU C Input" superClass="nbeclipse.toolchain.nbde.rel.tc.gcc.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.gpp.932277790" name="GNU C++ Compiler" superClass="nbeclipse.toolchain.nbde.rel.tc.gpp">
+								<option id="nbeclipse.toolchain.super.gpp.cpu.2091363162" superClass="nbeclipse.toolchain.super.gpp.cpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.platform.1832203354" superClass="nbeclipse.toolchain.super.gpp.platform" value="MOD5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.cpu_type.1628127484" superClass="nbeclipse.toolchain.super.gpp.cpu_type" value="MCF5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.directories.includepaths.29030340" superClass="nbeclipse.toolchain.super.gpp.directories.includepaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/mod5270/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/gcc-m68k/m68k-elf/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LAB3}&quot;"/>
+								</option>
+								<inputType id="nbeclipse.toolchain.nbde.rel.tc.gpp.input.727338208" name="GNU C++ Input" superClass="nbeclipse.toolchain.nbde.rel.tc.gpp.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.as.298375742" name="GNU Assembler" superClass="nbeclipse.toolchain.nbde.rel.tc.as">
+								<option id="nbeclipse.toolchain.super.as.cpu.1657608648" superClass="nbeclipse.toolchain.super.as.cpu" value="-mcpu=5206e" valueType="string"/>
+								<inputType id="nbeclipse.toolchain.nbde.rel.tc.as.input.726676684" name="GNU Assembler Input" superClass="nbeclipse.toolchain.nbde.rel.tc.as.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.link.732276041" name="GNU C/C++ Linker" superClass="nbeclipse.toolchain.nbde.rel.tc.link">
+								<option id="nbeclipse.toolchain.super.link.mcpu.146204741" superClass="nbeclipse.toolchain.super.link.mcpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.link.ldflags.199585019" superClass="nbeclipse.toolchain.super.link.ldflags" value="-Wl -Wl,-n -T&quot;${NBROOT}/MOD5270/lib/MOD5270.ld&quot; -Wl,-R&quot;${NBROOT}/MOD5270/lib/sys.ld&quot;" valueType="string"/>
+								<option id="nbeclipse.toolchain.nbde.rel.tc.link.libs.libs.1204544232" superClass="nbeclipse.toolchain.nbde.rel.tc.link.libs.libs" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/MOD5270.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/NetBurner.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/FatFile.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\debugLibrary.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\Lua_Full.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\nb-libxively.a&quot;"/>
+								</option>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.rel.tc.objcopy.1861787909" name="GNU ELF Objcopy" superClass="nbeclipse.toolchain.nbde.rel.tc.objcopy"/>
+							<tool command="compcode" id="nbeclipse.toolchain.nbde.rel.tc.compcode.1482995823" name="NetBurner Compcode" superClass="nbeclipse.toolchain.nbde.rel.tc.compcode">
+								<option id="nbeclipse.toolchain.super.compcode.memrange.184279444" superClass="nbeclipse.toolchain.super.compcode.memrange" value="0xffc08000 0xFFC80000" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.compcode.platform.1614521555" superClass="nbeclipse.toolchain.super.compcode.platform" value="MOD5270" valueType="string"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="nbeclipse.toolchain.nbde.debug.1256916424">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="nbeclipse.toolchain.nbde.debug.1256916424" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="s19" artifactName="${ProjName}_APP" buildProperties="" cleanCommand="rm -f" description="" id="nbeclipse.toolchain.nbde.debug.1256916424" name="Debug" parent="nbeclipse.toolchain.nbde.debug">
+					<folderInfo id="nbeclipse.toolchain.nbde.debug.1256916424." name="/" resourcePath="">
+						<toolChain id="nbeclipse.toolchain.nbde.debug.tc.1557634781" name="NetBurner Device" superClass="nbeclipse.toolchain.nbde.debug.tc">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="nbeclipse.toolchain.nbde.debug.tc.targetPlatform.885010474" name="NetBurner Module" superClass="nbeclipse.toolchain.nbde.debug.tc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/LAB3/Debug}" enableAutoBuild="true" id="nbeclipse.toolchain.nbde.debug.tc.builder.1086937876" managedBuildOn="true" name="Debug ELF builder (MINGW).Debug" superClass="nbeclipse.toolchain.nbde.debug.tc.builder"/>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.html.1267167328" name="NetBurner Comphtml" superClass="nbeclipse.toolchain.nbde.debug.tc.html"/>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.lua.2090889664" name="NetBurner Complua" superClass="nbeclipse.toolchain.nbde.debug.tc.lua">
+								<option id="nbeclipse.toolchain.super.lua.nb.location.1507777536" superClass="nbeclipse.toolchain.super.lua.nb.location" value="C:\nburn/pcbin/complua/complua.lua" valueType="string"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.gcc.809699610" name="GNU C Compiler" superClass="nbeclipse.toolchain.nbde.debug.tc.gcc">
+								<option id="nbeclipse.toolchain.super.gcc.cpu.417882953" superClass="nbeclipse.toolchain.super.gcc.cpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.platform.239385129" superClass="nbeclipse.toolchain.super.gcc.platform" value="MOD5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.cpu_type.262332954" superClass="nbeclipse.toolchain.super.gcc.cpu_type" value="MCF5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gcc.directories.includepaths.37013573" superClass="nbeclipse.toolchain.super.gcc.directories.includepaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/mod5270/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/gcc-m68k/m68k-elf/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LAB3}&quot;"/>
+								</option>
+								<option id="nbeclipse.toolchain.nbde.debug.tc.gcc.preprocessor.defined.908274906" superClass="nbeclipse.toolchain.nbde.debug.tc.gcc.preprocessor.defined" valueType="stringList">
+									<listOptionValue builtIn="false" value="_DEBUG"/>
+								</option>
+								<inputType id="nbeclipse.toolchain.nbde.debug.tc.gcc.input.1327326693" name="GNU C Input" superClass="nbeclipse.toolchain.nbde.debug.tc.gcc.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.gpp.1018215499" name="GNU C++ Compiler" superClass="nbeclipse.toolchain.nbde.debug.tc.gpp">
+								<option id="nbeclipse.toolchain.super.gpp.cpu.2108842513" superClass="nbeclipse.toolchain.super.gpp.cpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.platform.677386266" superClass="nbeclipse.toolchain.super.gpp.platform" value="MOD5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.cpu_type.238033984" superClass="nbeclipse.toolchain.super.gpp.cpu_type" value="MCF5270" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.gpp.directories.includepaths.1804504440" superClass="nbeclipse.toolchain.super.gpp.directories.includepaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/mod5270/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/gcc-m68k/m68k-elf/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LAB3}&quot;"/>
+								</option>
+								<option id="nbeclipse.toolchain.nbde.debug.tc.gpp.preprocessor.defined.1073964428" superClass="nbeclipse.toolchain.nbde.debug.tc.gpp.preprocessor.defined" valueType="stringList">
+									<listOptionValue builtIn="false" value="_DEBUG"/>
+								</option>
+								<inputType id="nbeclipse.toolchain.nbde.debug.tc.gpp.input.1685844838" name="GNU C++ Input" superClass="nbeclipse.toolchain.nbde.debug.tc.gpp.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.as.1681262631" name="GNU Assembler" superClass="nbeclipse.toolchain.nbde.debug.tc.as">
+								<option id="nbeclipse.toolchain.super.as.cpu.796897233" superClass="nbeclipse.toolchain.super.as.cpu" value="-mcpu=5206e" valueType="string"/>
+								<inputType id="nbeclipse.toolchain.nbde.debug.tc.as.input.613282397" name="GNU Assembler Input" superClass="nbeclipse.toolchain.nbde.debug.tc.as.input"/>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.link.225977471" name="GNU C/C++ Linker" superClass="nbeclipse.toolchain.nbde.debug.tc.link">
+								<option id="nbeclipse.toolchain.super.link.mcpu.787252431" superClass="nbeclipse.toolchain.super.link.mcpu" value="-mcpu=5206e" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.link.ldflags.251143194" superClass="nbeclipse.toolchain.super.link.ldflags" value="-Wl -Wl,-n -T&quot;${NBROOT}/MOD5270/lib/MOD5270.ld&quot; -Wl,-R&quot;${NBROOT}/MOD5270/lib/sys.ld&quot;" valueType="string"/>
+								<option id="nbeclipse.toolchain.nbde.debug.tc.link.libs.libs.1267200418" superClass="nbeclipse.toolchain.nbde.debug.tc.link.libs.libs" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/DBMOD5270.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/DBNetBurner.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NBROOT}/lib/FatFile.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\DBdebugLibrary.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\DBLua_Full.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\nburn\lib\DBnb-libxively.a&quot;"/>
+								</option>
+							</tool>
+							<tool id="nbeclipse.toolchain.nbde.debug.tc.objcopy.2028154803" name="GNU ELF Objcopy" superClass="nbeclipse.toolchain.nbde.debug.tc.objcopy"/>
+							<tool command="compcode" id="nbeclipse.toolchain.nbde.debug.tc.compcode.37529126" name="NetBurner Compcode" superClass="nbeclipse.toolchain.nbde.debug.tc.compcode">
+								<option id="nbeclipse.toolchain.super.compcode.memrange.2036581165" superClass="nbeclipse.toolchain.super.compcode.memrange" value="0xffc08000 0xFFC80000" valueType="string"/>
+								<option id="nbeclipse.toolchain.super.compcode.platform.896881828" superClass="nbeclipse.toolchain.super.compcode.platform" value="MOD5270" valueType="string"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="LAB3.nbeclipse.toolchain.nbde.1422512706" name="NetBurner Device Executable" projectType="nbeclipse.toolchain.nbde"/>
+	</storageModule>
+</cproject>
