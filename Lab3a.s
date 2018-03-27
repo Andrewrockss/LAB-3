@@ -87,15 +87,15 @@ move.l %d0, %d2
 jsr cr    	/*new line*/
 
 
-DivisorCheck:			
-cmp.l #2, %d2
-blt InvalidDSma
-cmp.l #5, %d2
-bgt InvalidDBig
+DivisorCheck:			/*testing the user's divisor entry*/
+cmp.l #2, %d2       /*compareing with 3*/
+blt Invalid_dtoosmall   /*branch to Invalid_dtoosmall if greater than 3*/
+cmp.l #5, %d2     /*compareing with 5*/
+bgt Invalid_dtoobig      /*branch to Invalid_dtoosmall if greater than 3*/
 bra ContinueDiv
 
 
-InvalidDSma:
+Invalid_dtoosmall :
 pea InvalidSmaS
 jsr iprintf			
 move.l %d2, (%sp)
