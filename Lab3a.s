@@ -87,85 +87,86 @@ move.l %d0, %d2
 jsr cr    	/*new line*/
 
 
-DivisorCheck:			/*testing the user's divisor entry*/
+CheckDivisor:			/*testing the user's divisor entry*/
 cmp.l #2, %d2       /*compareing with 3*/
-blt Invalid_dtoosmall   /*branch to Invalid_dtoosmall if greater than 3*/
+blt Invalid_dtoosmall   /*branch to Invalid_dtoosmall if less than 3*/
 cmp.l #5, %d2     /*compareing with 5*/
 bgt Invalid_dtoobig      /*branch to Invalid_dtoosmall if greater than 3*/
-bra ContinueDiv
+bra ContinueDiv        /*else go to ContinueDiv*/
 
 
-Invalid_dtoosmall :
-pea InvalidSmaS
-jsr iprintf			
-move.l %d2, (%sp)
-jsr value
+Invalid_dtoosmall :        /*divisor number is too small*/
+pea InvalidSmaS                 /*push invalid messadge to stack*/
+jsr iprintf			            /*print the messadge to Matty*/
+move.l %d2, (%sp)   /*move useres value into stack pointer*/
+jsr value                /*print the useres invalid entery*/
 addq.l #4, %sp     /*clean up the stack*/
-jsr cr
+jsr cr           /*new line*/
 jsr getstring      /*get the number the user typed */
 move.l %d0, %d2
-jsr cr
-bra DivisorCheck
+jsr cr    /*new line*/
+bra CheckDivisor  
 
 
-InvalidDBig:
-pea InvalidBigS
+InvalidDBig:   /*divisor number is too big*/
+pea Invalid_tobig       /*push invalid messadge to stack and promt for new number*/
 jsr iprintf			/*print the messadge to Matty*/
-move.l %d2, (%sp)
-jsr value
+move.l %d2, (%sp)   /*move useres value into stack pointer*/
+jsr value    /*print the useres invalid entery*/
 addq.l #4, %sp 	 /*clean up the stack*/	
 
-jsr cr
+jsr cr     /*new line*/
 jsr getstring     /*get the number the user typed */
-move.l %d0, %d2
-jsr cr
-bra DivisorCheck
+move.l %d0, %d2    /*get the new number the user entered and check it agian*/
+jsr cr        /*new line*/
+bra DivisorCheck   /*check users number agian*/
 
-ContinueDiv:
-move.l %d2, 44(%sp)
+ContinueDiv:   /*if the user entered a number in the range*/
+move.l %d2, 44(%sp)  /*store the divisor number*/
 
+move.l 48(%sp), %d7         /*%d7 is a counter = num of enteries*/
+move.l #0x2300000, %a2  /*havge a2 point to this address*/
 
+/*Once all the correct values are stored enter the remaning positive values*/
 
-move.l 48(%sp), %d7 /*%d7 is a counter*/
-move.l #0x2300000, %a2
-
-/****/
 ValueLoop:
-jsr cr
-pea EnterNum
+jsr cr     /*new line*/
+pea EnterNum      /*push EnterNum messadge to stack*/
 jsr iprintf   /*print the messadge to Matty*/
 addq.l #4, %sp /*clean up the stack*/
 
 jsr getstring     /*get the number the user typed */
-move.l %d0, %d2
-cmp.l #0, %d2
-bge Continue
-jsr cr
-pea InvalidLT0
-jsr iprintf   /*print the messadge to Matty*/
-addq.l #4, %sp
-bra ValueLoop
+move.l %d0, %d2     /*store number the user typed in d2*/
+cmp.l #0, %d2       /*compareing with 0*/
+bge Continue     /*valid if greater than 0*/
+jsr cr    /*new line*/
 
-Continue:
-move.l %d2, (%a2)+
-subq.l #1, %d7
-cmp.l #1, %d7
-bgt ValueLoop
-Next:
-jsr cr			
-pea FinalNum
+pea Invalid_toolarge
 jsr iprintf   /*print the messadge to Matty*/
-addq.l #4, %sp
+addq.l #4, %sp   /*clean up the stack*/
+bra ValueLoop   /*getting a new number go back*/
+
+Continue:     /*gose here if the number is valid*/
+move.l %d2, (%a2)+   /*store the number and incremnt a2*/
+subq.l #1, %d7   /*subtract one fron the counter*/
+cmp.l #1, %d7     /*compareing with 1*/
+bgt ValueLoop    /* if the counter is greater than one get the next value*/
+
+Next:             /*getting the last entery*/
+jsr cr			  /*new line*/
+pea FinalNum      /*pushFinalNum messadge to stack*/ 
+jsr iprintf   /*print the messadge to Matty*/
+addq.l #4, %sp     /*clean up the stack*/
 
 jsr getstring     /*get the number the user typed */
-cmp.l #0, %d0
-ble Next
-move.l %d0, (%a2)+
+cmp.l #0, %d0   /*compareing with 0*/
+ble Next      /*if less than zero contiune to next*/
+move.l %d0, (%a2)+   /*store in a2 then increment a2*/
 
-movem.l (%sp), %d2-%d7/%a2-%a5  
+movem.l (%sp), %d2-%d7/%a2-%a5   /*restore all the used registers*/ 
 add.l #40, %sp      /*clean up the stack*/
 
-rts
+rts    /*return from the stack, and pop the value of the return addresss*/
 
 /*End of Subroutine **************************************************/ 
 .data
@@ -182,7 +183,7 @@ Divisor:
 .string "Please enter the divisor(2min-5max) followed by 'enter'"
 EnterNum:
 .string "Please enter a number(Positive Only): "
-InvalidLT0:
+Invalid_toolarge:
 .string "The number must be positive"
 FinalNum:
 .string "Please enter the last number(Positive Only): "
