@@ -60,7 +60,7 @@ bne nextvalue
 jsr cr     	/*new line*/
 
 clr.l %d5
-pea End2   /**/
+pea Min   /**/
 jsr iprintf
 addq.l #4,%a7
 move.l (%a3)+, %d5
@@ -70,7 +70,7 @@ addq.l #4,%a7  /*clean up stack*/
 jsr cr      	/*new line*/
 
 clr.l %d5
-pea End3   /**/
+pea Max   /**/
 jsr iprintf
 addq.l #4,%a7 /*clean up stack*/
 move.l (%a3)+, %d5
@@ -80,7 +80,7 @@ addq.l #4,%a7  /*clean up stack*/
 jsr cr    	/*new line*/
 
 clr.l %d5
-pea End4   /**/
+pea Mean   /**/
 jsr iprintf
 addq.l #4,%a7  /*clean up stack*/
 move.l (%a3)+, %d5
@@ -89,14 +89,14 @@ jsr value    /*print value to matty */
 addq.l #4,%a7  /*clean up stack*/
 jsr cr     	/*new line*/
 
-pea End5   /**/
+pea total   /**/
 jsr iprintf    /*print message to matty */
 addq.l #4,%a7  /*clean up stack*/
 move.l %d6, -(%a7)
 jsr value     /*print value to matty */
 addq.l #4,%a7  /*clean up stack*/
 
-pea End6   /**/
+pea Div /**/
 jsr iprintf   /*print message to matty */
 addq.l #4,%a7   /*clean up stack*/
 move.l %d3, -(%a7)
@@ -105,7 +105,7 @@ addq.l #4,%a7  /*clean up stack*/
 jsr cr    	/*new line*/
 
 clr.l %d5
-pea End7   /**/
+pea Num_div:   /**/
 jsr iprintf   /*print message to matty */
 addq.l #4,%a7   /*clean up stack*/
 
@@ -115,7 +115,7 @@ move.l %d5, -(%a7)
 jsr value     /*print value to matty */
 move.l (%a7)+, %d5
 
-pea End8   /**/
+pea empty   /**/
 jsr iprintf   /*print message to matty */
 addq.l #4,%a7   /*clean up stack*/
 
@@ -124,7 +124,7 @@ cmp.l #0,%d7
 bne nextdiv
 jsr cr    	/*new line*/
 
-pea End9   
+pea Ended   
 jsr iprintf   /*print message to matty */
 addq.l #4,%a7   /*clean up stack*/
 
@@ -140,21 +140,21 @@ entry_number:
 .string "The number of values entered were "
 Howmanynum:
 .string "The numbers are "
-End2:
+Min:
 .string "Min number = "
-End3:
+Max:
 .string "Max number = "
-End4:
+Mean:
 .string "Mean number = "
-End5:
+total:
 .string "There are "
-End6:
+Div:
 .string " number(s) divisible by "
-End7:
+Num_div:
 .string "They are: "
-End8:
+empty:
 .string " "
-End9:
+Ended:
 .string "Program ended"
 
 
